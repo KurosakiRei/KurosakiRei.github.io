@@ -26,4 +26,5 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
+          target-folder: home
           FOLDER: dist
