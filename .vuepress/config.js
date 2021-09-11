@@ -2,7 +2,7 @@ module.exports = {
     "base": "/home/",
     "title": "零号梦境",
     "description": "正在向主梦境跳转··········",
-    "dest": "C:\\Users\\KurosakiRei\\Desktop\\kurosakirei.github.io\\home",
+    "dest": "dist",
     "head": [
         [
             "link",
