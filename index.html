@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>零号·梦境</title>
+    <link rel="icon" type="image/png" href="https://zyj_yida.gitee.io/source/img/ico/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg" style="display: none;" class="phone-class"></div>
+        <video id="myVideo" src="./assets/video/cinema.mp4" class="pc-class" loop width="100%" height="110%" autoplay="autoplay" muted="muted" cue-before:none; type="video/mp4" playsinline></video>
+        <!-- <div id="overlay"></div> -->
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1 data-text="零号·梦境" id="title">零号·梦境</h1>
+                <p>嘘！别被他们发现了！</p>
+                <nav>
+                    <ul>
+                        <li><a href="./home/index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+                        <li><a href="https://kurosakirei.github.io/home/wallpapers/index.html" class="icon solid fa-photo-video"><span class="label">Wallpaper</span></a></li>
+                        <li><a href="mailto:kurosakirei@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">&copy; Zero.</span>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            document.body.classList.remove('is-preload');
+            document.getElementById("myVideo").playbackRate = 0.25;
+        }
+        window.ontouchmove = function() {
+            return false;
+        }
+        window.onorientationchange = function() {
+            document.body.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
