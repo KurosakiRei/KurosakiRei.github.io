@@ -301,7 +301,7 @@ module.exports = {
                             const timezone = require('dayjs/plugin/timezone')
                             dayjs.extend(utc)
                             dayjs.extend(timezone)
-                            return dayjs(timestamp).format('YYYY/MM/DD, HH:mm')
+                            return dayjs(timestamp).subtract(4, 'hour').format('YYYY/MM/DD, HH:mm')
                         }
                     }
                 ]
