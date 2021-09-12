@@ -292,16 +292,15 @@ module.exports = {
                 }
             ],
             [
-                [
-                    '@vuepress/last-updated',
-                    {
-                        transformer: (timestamp, lang) => {
-                            const moment = require('moment')
-                            moment.locale(lang)
-                            return moment(timestamp).utcOffset(-4).format('YYYY/MM/DD HH:mm')
-                        }
+                '@vuepress/last-updated',
+                {
+                    transformer: (timestamp, lang) => {
+                        const moment = require('moment')
+                        moment.locale(lang)
+                        return moment(timestamp).utcOffset(-4).format('YYYY/MM/DD HH:mm')
                     }
-                ]
+                }
+
             ],
         ]
         // configureWebpack: (config, isServer) => {
