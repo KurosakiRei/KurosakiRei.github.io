@@ -299,7 +299,7 @@ module.exports = {
                             // Don't forget to install moment yourself
                             const moment = require('moment-timezone')
                             moment.locale(lang)
-                            return moment.tz(timestamp, "America/New_York").format('YYYY/MM/DD, HH:mm')
+                            return moment.tz(new Date(timestamp), "America/New_York").format('YYYY/MM/DD, HH:mm')
                         }
                     }
                 ]
