@@ -296,12 +296,9 @@ module.exports = {
                     '@vuepress/last-updated',
                     {
                         transformer: (timestamp, lang) => {
-                            const dayjs = require('dayjs')
-                            const utc = require('dayjs/plugin/utc')
-                            const timezone = require('dayjs/plugin/timezone')
-                            dayjs.extend(utc)
-                            dayjs.extend(timezone)
-                            return dayjs(timestamp).subtract(4, 'hour').format('YYYY/MM/DD, HH:mm')
+                            const moment = require('moment')
+                            moment.locale(lang)
+                            return moment(timestamp).utcOffset(-4).format('YYYY/MM/DD HH:mm')
                         }
                     }
                 ]
