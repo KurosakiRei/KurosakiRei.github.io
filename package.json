@@ -8,9 +8,9 @@
         "upcdn": "vuepress build . && node ./scripts/upcdn.js"
     },
     "devDependencies": {
+        "dayjs": "^1.10.7",
         "glob": "^7.1.6",
         "mime": "^2.4.4",
-        "moment-timezone": "^0.5.33",
         "path": "^0.12.7",
         "qiniu": "^7.3.0",
         "vuepress": "^1.7.1",

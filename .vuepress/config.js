@@ -296,10 +296,12 @@ module.exports = {
                     '@vuepress/last-updated',
                     {
                         transformer: (timestamp, lang) => {
-                            // Don't forget to install moment yourself
-                            const moment = require('moment-timezone')
-                            moment.locale(lang)
-                            return moment.tz(new Date(timestamp), "America/New_York").format('YYYY/MM/DD, HH:mm')
+                            const dayjs = require('dayjs')
+                            const utc = require('dayjs/plugin/utc')
+                            const timezone = require('dayjs/plugin/timezone')
+                            dayjs.extend(utc)
+                            dayjs.extend(timezone)
+                            return dayjs(timestamp).tz('America/New_York').format('YYYY/MM/DD, HH:mm')
                         }
                     }
                 ]
