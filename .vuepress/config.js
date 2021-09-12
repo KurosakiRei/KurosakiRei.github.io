@@ -297,7 +297,7 @@ module.exports = {
                     transformer: (timestamp, lang) => {
                         const moment = require('moment-timezone')
                         moment.locale(lang)
-                        return moment.tz(timestamp, "America/New_York").format('YYYY/MM/DD, HH:mm')
+                        return moment.tz(timestamp, "America/New_York").format('YYYY/MM/DD, hh:mm')
                     }
                 }
 
