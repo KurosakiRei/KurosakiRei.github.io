@@ -8,7 +8,7 @@ module.exports = {
             "link",
             {
                 "rel": "icon",
-                "href": "https://pan.zealsay.com/blog/favicon.ico"
+                "href": "favicon.ico"
             }
         ],
         [
