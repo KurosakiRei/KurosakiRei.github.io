@@ -8,7 +8,7 @@ module.exports = {
             "link",
             {
                 "rel": "icon",
-                "href": "/favicon.ico"
+                "href": "https://github.com/KurosakiRei/kurosakirei.github.io/blob/gh-pages/home/favicon.ico"
             }
         ],
         [
