@@ -4,13 +4,13 @@ module.exports = {
     "description": "正在向主梦境跳转··········",
     "dest": "dist",
     "head": [
-        [
+        /* [
             "link",
             {
                 "rel": "icon",
                 "href": "/logo.png"
             }
-        ],
+        ], */
         [
             "meta",
             {
