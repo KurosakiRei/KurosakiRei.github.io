@@ -1124,6 +1124,8 @@ a:hover {
 .pc-class {
     object-fit: cover;
 }
+
+
 /*
 @media (max-width: 450px) {
     .pc-class {
@@ -1191,9 +1193,9 @@ a:hover {
 }
 
 @keyframes glitch-p {
-	0%{
-		--scale:.87;
-	}
+    0% {
+        --scale: .87;
+    }
     17% {
         --scale: .87;
     }
@@ -1209,9 +1211,9 @@ a:hover {
     87% {
         --scale: 1;
     }
-	100%{
-		--scale:1;
-	}
+    100% {
+        --scale: 1;
+    }
 }
 
 @keyframes glitch-a {
