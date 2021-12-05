@@ -1,6 +1,6 @@
 module.exports = {
     "base": "/home/",
-    "title": "零号梦境",
+    "title": "深夜零点",
     "description": "正在向主梦境跳转··········",
     "dest": "dist",
     "head": [
