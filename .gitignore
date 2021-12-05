@@ -85,3 +85,4 @@ scripts
 
 default.conf
 Dockerfile
+.DS_Store
